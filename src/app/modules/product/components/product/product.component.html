@@ -1,0 +1,24 @@
+<form [formGroup]="formGroup" (ngSubmit)="addWarrantySubmit($event)">
+	<h3>Add warranty form</h3>
+
+	<p>
+		<label for="date-added">Date added</label>
+		<input id="date-added" formControlName="dateAdded" type="date" />
+	</p>
+
+	<p>
+		<label for="date-expiration">Date expiration</label>
+		<input id="date-expiration" formControlName="dateExpiration" type="date" />
+	</p>
+
+	<p>
+		<label for="extend">Extend?</label>
+		<input id="extend" formControlName="extended" type="checkbox" />
+	</p>
+
+	<p>
+		<input placeholder="Description" formControlName="description" type="text" />
+	</p>
+
+	<p><button type="submit" [disabled]="formGroup.invalid">Add warranty</button></p>
+</form>

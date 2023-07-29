@@ -1,0 +1,20 @@
+<ng-container *ngIf="warrantyList().length; else placeholderRef">
+	<section *ngFor="let warranty of warrantyList()" style="margin: 20px">
+		<h2>Information</h2>
+
+		<p>Date added: {{ warranty.dateAdded }}</p>
+		<p>Date expiration: {{ warranty.dateExpiration }}</p>
+		<p>
+			Description:
+			<b>
+				{{ warranty.description }}
+			</b>
+		</p>
+
+		<p>Is extended?: {{ warranty.extended }}</p>
+	</section>
+</ng-container>
+
+<ng-template #placeholderRef>
+	There is no warranties
+</ng-template>
