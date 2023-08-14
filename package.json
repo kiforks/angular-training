@@ -31,8 +31,6 @@
     "@ngxs/storage-plugin": "^3.7.6",
     "@ngxs/store": "^3.7.6",
     "lodash-es": "^4.17.21",
-    "mapbox-gl": "^2.15.0",
-    "mathsass": "^0.11.0",
     "modularscale-sass": "^3.0.10",
     "ng-generic-pipe": "^15.0.1",
     "ng-let": "^15.0.1",
